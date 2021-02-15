@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+    display: flex;
+    flex-direction: column;
+}
+
+.parts {
+    width: 100%;
+    align-items: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#search {
+  width: 100%;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+
+input {
+  width: 40%;
+  height: 35px;
+  align: center;
+
+}
+
+
+body {
+  background-color: crimson;
+  background-position: cover;
+  border: 5px solid black
+
+
+
+}
+h1 {
+  color: black;
+  font-family: courier;
+  font-size: 100px;
+  text-align: center;
+
+}
+p {
+    color: black;
+    font-family: courier;
+    font-size: 30px;
+    font-style: oblique 0deg;
+    text-align: center;
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Style the search field */
+  form.example input[type=text] {
+    font-size: 20px;
+    border: 5px solid black;
+    float: left;
+    width: 100px;
+    background: #f1f1f1;
+    margin-bottom: 30px;
+  }
+
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 10%;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 5px solid black;
+    border-left: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+    </style>
+    <title>YouChoose</title>
+
+  </head>
+
+
+    <body>
+
+      <div id="container">
+
+      <div class="parts">
+        <h1>Its all about perspective</h1>
+      </div>
+
+      <div class="parts">
+        <p>See what different news sources are saying about the same topic. Select two news sources and enter a current news topic you'd like to know more about.</p>
+      </div>
+
+          <div>
+
+                <form action="p2" class="example" method="post" id="search">
+
+
+                          <select name="dd1">
+                              <option value="abc-news">ABC News</option>
+                              <option value="al-jazeera-english">Al Jazeera English</option>
+                              <option value="associated-press">Associated Press</option>
+                              <option value="bbc-news">BBC News</option>
+                              <option value="bbc-sport">BBC Sport</option>
+                              <option value="bloomberg">Bloomberg</option>
+                              <option value="business-insider">Business Insider</option>
+                              <option value="cbs-news">CBS News</option>
+                              <option value="cnbc">CNBC</option>
+                              <option value="cnn">CNN</option>
+                              <option value="daily-mail">Daily Mail</option>
+                              <option value="engadget">Engadget</option>
+                              <option value="espn">ESPN</option>
+                              <option value="financial post">Financial Post</option>
+                              <option value="financial-times">Financial Times</option>
+                              <option value="fortune">Fortune</option>
+                              <option value="four-four-two">FourFourTwo</option>
+                              <option value="fox-news">Fox News</option>
+                              <option value="fox-sports">Fox Sports</option>
+                              <option value="google-news">Google News</option>
+                              <option value="ign">IGN</option>
+                              <option value="independent">Independent</option>
+                              <option value="info-money">Info Money</option>
+                              <option value="mashable">Mashable</option>
+                              <option value="metro">Metro</option>
+                              <option value="mirror">Mirror</option>
+                              <option value="msnbc">MSNBC</option>
+                              <option value="mtv-news">MTV News</option>
+                              <option value="national-geographic">National Geographic</option>
+                              <option value="national-review">National Review</option>
+                              <option value="nbc-news">NBC News</option>
+                              <option value="news24">News24</option>
+                              <option value="new-scientist">New Scientist</option>
+                              <option value="newsweek">Newsweek</option>
+                              <option value="new-york-magazine">New York Magazine</option>
+                              <option value="nfl-news">NFL News</option>
+                              <option value="nhl-news">NHL News</option>
+                              <option value="politico">Politico</option>
+                              <option value="recode">Recode</option>
+                              <option value="reuters">Reuters</option>
+                              <option value="rt">RT</option>
+                              <option value="talksport">TalkSport</option>
+                              <option value="techcrunch">TechCrunch</option>
+                              <option value="techradar">TechRadar</option>
+                              <option value="the-economist">The Economist</option>
+                              <option value="the-guardian-uk">The Guardian (UK)</option>
+                              <option value="the-hindu">The Hindu</option>
+                              <option value="the-huffington-post">The Huffington Post</option>
+                              <option value="the-lad-bible">The Lad Bible</option>
+                              <option selected = 'selected' value="the-new-york-times">The New York Times</option>
+                              <option value="the-sport-bible">The Sport Bible</option>
+                              <option value="the-telegraph">The Telegraph</option>
+                              <option value="the-times-of-india">The Times of India</option>
+                              <option value="the-verge">The Verge</option>
+                              <option value="the-wall-street-journal">The Wall Street Journal</option>
+                              <option value="the-washington-post">The Washington Post</option>
+                              <option value="the-washington-times">The Washington Times</option>
+                              <option value="time">Time</option>
+                              <option value="usa-today">USA Today</option>
+                              <option value="vice-news">Vice News</option>
+                              <option value="Wired">Wired</option>
+                          </select>
+
+                    <select name="dd2">
+                              <option value="abc-news">ABC News</option>
+                              <option value="al-jazeera-english">Al Jazeera English</option>
+                              <option value="associated-press">Associated Press</option>
+                              <option selected = 'selected' value="bbc-news">BBC News</option>
+                              <option value="bbc-sport">BBC Sport</option>
+                              <option value="bloomberg">Bloomberg</option>
+                              <option value="business-insider">Business Insider</option>
+                              <option value="cbs-news">CBS News</option>
+                              <option value="cnbc">CNBC</option>
+                              <option value="cnn">CNN</option>
+                              <option value="daily-mail">Daily Mail</option>
+                              <option value="engadget">Engadget</option>
+                              <option value="espn">ESPN</option>
+                              <option value="financial post">Financial Post</option>
+                              <option value="financial-times">Financial Times</option>
+                              <option value="fortune">Fortune</option>
+                              <option value="four-four-two">FourFourTwo</option>
+                              <option value="fox-news">Fox News</option>
+                              <option value="fox-sports">Fox Sports</option>
+                              <option value="google-news">Google News</option>
+                              <option value="ign">IGN</option>
+                              <option value="independent">Independent</option>
+                              <option value="info-money">Info Money</option>
+                              <option value="mashable">Mashable</option>
+                              <option value="metro">Metro</option>
+                              <option value="mirror">Mirror</option>
+                              <option value="msnbc">MSNBC</option>
+                              <option value="mtv-news">MTV News</option>
+                              <option value="national-geographic">National Geographic</option>
+                              <option value="national-review">National Review</option>
+                              <option value="nbc-news">NBC News</option>
+                              <option value="news24">News24</option>
+                              <option value="new-scientist">New Scientist</option>
+                              <option value="newsweek">Newsweek</option>
+                              <option value="new-york-magazine">New York Magazine</option>
+                              <option value="nfl-news">NFL News</option>
+                              <option value="nhl-news">NHL News</option>
+                              <option value="politico">Politico</option>
+                              <option value="recode">Recode</option>
+                              <option value="reuters">Reuters</option>
+                              <option value="rt">RT</option>
+                              <option value="talksport">TalkSport</option>
+                              <option value="techcrunch">TechCrunch</option>
+                              <option value="techradar">TechRadar</option>
+                              <option value="the-economist">The Economist</option>
+                              <option value="the-guardian-uk">The Guardian (UK)</option>
+                              <option value="the-hindu">The Hindu</option>
+                              <option value="the-huffington-post">The Huffington Post</option>
+                              <option value="the-lad-bible">The Lad Bible</option>
+                              <option value="the-new-york-times">The New York Times</option>
+                              <option value="the-sport-bible">The Sport Bible</option>
+                              <option value="the-telegraph">The Telegraph</option>
+                              <option value="the-times-of-india">The Times of India</option>
+                              <option value="the-verge">The Verge</option>
+                              <option value="the-wall-street-journal">The Wall Street Journal</option>
+                              <option value="the-washington-post">The Washington Post</option>
+                              <option value="the-washington-times">The Washington Times</option>
+                              <option value="time">Time</option>
+                              <option value="usa-today">USA Today</option>
+                              <option value="vice-news">Vice News</option>
+                              <option value="Wired">Wired</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <input id="box" type="text" placeholder="Search.." name="entersearch" value="Trade">
+                    <button id="but" type="submit" name="searchbutton"><i class="fa fa-search"></i></button>
+
+                </form>
+
+          </div>
+
+
+
+    </div>
+
+    </body>
+</html>

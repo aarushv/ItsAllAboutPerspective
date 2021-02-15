@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>{{page_title}}</title>
+</head>
+<body>
+<form action="greetings" method="post">
+    <label for="username">Please enter a name:</label>
+    <input type="text" id="username" name="username" />
+    <br>
+    <input type="checkbox" name="greet_type" value="hello">Hello greeting</input><br />
+    <input type="checkbox" name="greet_type" value="birthday">Birthday greeting</input>
+    <input type="submit" value="Go" name="gobtn"/> </form>
+{% if prompt %}
+<div class= 'formtitle'>{{prompt}}</div>
+{% endif %}
+</body>
+</html

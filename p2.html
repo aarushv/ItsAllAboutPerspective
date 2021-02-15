@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+    display: flex;
+    flex-direction: column;
+}
+
+#cont1{
+    display: flex;
+    flex-direction: row;
+}
+.parts {
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#search {
+  width: 100%;
+}
+
+input {
+  width: 40%;
+  height: 35px;
+  align: center;
+}
+
+#title {
+    font-family: Courier;
+    font-size: 35px;
+    font-weight: bold;
+    alignment: left;
+}
+
+#title2{
+    font-family: Courier;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+
+}
+#articles1 {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    padding: 13px;
+    font-family: Courier;
+    font-size: 15px;
+    width: 600px;
+    height: 250px;
+    margin-left: 10px;
+}
+
+#articles2 {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    padding: 13px;
+    font-family: Courier;
+    font-size: 15px;
+    width: 600px;
+    height: 250px;
+    margin-left: 10px;
+}
+
+body {
+  background-color: crimson;
+  background-position: cover;
+  border: 5px solid black;
+}
+
+h1 {
+  color: black;
+  font-family: courier;
+  font-size: 80px;
+  text-align: center;
+}
+
+p {
+    color: black;
+    font-family: courier;
+    font-size: 30px;
+    font-style: oblique 0deg;
+    text-align: center;
+}
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 20px;
+    font-size: 20px;
+    border: 5px solid black;
+    float: left;
+    width: 800px;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+  }
+
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+    </style>
+
+    <title>YouChoose</title>
+
+  </head>
+
+    <body>
+      <div id="container">
+
+      <div class="parts">
+        <h1>Here are your results!</h1>
+      </div>
+
+          <div id="cont1">
+
+            <div>
+
+
+
+            <div id="title"> {{source1}} </div>
+
+            {% for item in results1 %}
+                <div id="articles1">
+                    <b>Title:</b> {{item.title}} <br>
+                    <b>Author(s):</b> {{item.author}} <br>
+                    <b>Description:</b> {{item.description}} <br>
+                    <b>Source:</b> {{item.source}}<br>
+                    <b>Published At:</b> {{item.published}}<br>
+                    <b>URL:</b> <a href = {{item.url}}> {{item.url}}</a> <br>
+
+                 </div>
+          {% endfor %}
+          </div>
+              <div>
+
+              <div id="title2" > {{source2}} </div>
+
+            {% for item in results2 %}
+                <div id="articles2">
+                    <b>Title:</b> {{item.title}} <br>
+                    <b>Author(s):</b> {{item.author}} <br>
+                    <b>Description:</b> {{item.description}} <br>
+                    <b>Source:</b> {{item.source}}<br>
+                    <b>Published At:</b> {{item.published}}<br>
+                    <b>URL:</b> <a href = {{item.url}}> {{item.url}}</a> <br>
+
+                 </div>
+          {% endfor %}
+          </div>
+
+
+      </div>
+
+      <div class="parts">
+          <p><a href = 'https://finalproject-225506.appspot.com/'> Search for another current topic</a></p>
+
+      </div>
+
+
+    </body>
+</html>
